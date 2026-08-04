@@ -21,7 +21,12 @@ public class Q_7_reverse {
            bits[i] = '0';
            i++;
         }
+        int out = 0;
+        for(i = 0; i < 32 ; i++)
+        {
+            if(bits[i] == '1') out += (int)Math.pow(2, 31-i);
+        }
         String reverse = new String(bits);
-        System.out.println("The 32 bit reversed string is: " + reverse);
+        System.out.println("The 32 bit out string is: " + reverse + " and the number is: " + out);
     }
 }

@@ -28,6 +28,13 @@ public class Q_1_summary {
 		{
 			System.out.println(i);
 		}
+		int[][] unity = new int[3][3];
+		for(int row[] : unity)
+		{
+			System.out.print("[");
+			for(int i : row) System.out.print(1);
+			System.out.println("]");
+		}
 		input.close();
 	}
 }

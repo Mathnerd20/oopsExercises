@@ -2,7 +2,7 @@ package lab2;
 
 import java.util.Scanner;
 
-public class Q_3_product {
+public class Q_3_factorial {
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class Q_3_product {
 			pdt *= i;
 			i++;
 		}
-		System.out.println("The product of first " + n + " natural numbers is " +pdt);
+		System.out.println("The product of first " + n + " natural numbers (factorial of n) is " + pdt);
 		input.close();
 	}
 }

@@ -13,9 +13,10 @@ public class Q_5_AP {
         System.out.println("The series is:");
         for(int i = 1; i <=n; i++)
         {
-           System.out.println(a);
+           System.out.print(a + ",");
            a += d;
         }
+        System.out.print("\b");
         input.close();
     }
 }
