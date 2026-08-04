@@ -29,10 +29,11 @@ public class Q_9_vectAdd {
 				sum[i] = a1[i];
 		}
 		else {
-			for(int i = a; i < a; i++)
+			for(int i = a; i < b; i++)
 				sum[i] = b1[i];
 		}
-		
-		for(int i : sum) System.out.println(i);
+		System.out.print("(");
+		for(int i : sum) System.out.print(i + ",");
+		System.out.println("\b)");
 	}
 }
