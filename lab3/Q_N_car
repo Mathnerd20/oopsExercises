@@ -1,0 +1,54 @@
+package E3_25MCCE28;
+
+import java.util.Scanner;
+
+class car{
+	int year;
+	String make;
+	double maxSpeed;
+	car(int yr, String mk, double speed)
+	{
+		year = yr;
+		make = mk;
+		maxSpeed = speed;
+	}
+//	public void setYear(int year) {
+//		this.year = year;
+//	}
+//	public void setMake(String make) {
+//		this.make = make;
+//	}
+//	public void setMaxSpeed(double maxSpeed) {
+//		this.maxSpeed = maxSpeed;
+//	}
+	public int getYear()
+	{
+		return year;
+	}
+	public String getMake()
+	{
+		return make;
+	}
+	public double getMaxSpeed()
+	{
+		return maxSpeed;
+	}
+}
+
+public class Q_N_car {
+
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter car details (year, make, maxSpeed): ");
+		int year = input.nextInt();
+		input.nextLine();
+		String make = input.nextLine();
+		double speed = input.nextDouble();
+		car a = new car(year, make, speed);
+		System.out.println("Year of manufacture is: " + a.getYear());
+		System.out.println("Make is: " + a.getMake());
+		System.out.println("The max speed is: " + a.getMaxSpeed());
+		input.close();
+	}
+}
