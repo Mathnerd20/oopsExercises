@@ -1,5 +1,4 @@
-package E3_25MCCE28;
-
+package lab3;
 import java.util.Scanner;
 
 class car{

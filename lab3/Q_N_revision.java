@@ -26,18 +26,26 @@ class square{
 	}
 }
 
-class circle{
-	private int radius = 3;
-	final double pi = 3.14159;
-	public int getRadius()
-	{
-		return radius;
-	}
-	public double getArea()
-	{
-		return pi * Math.pow(radius, 2);
-	}
-}
+//class circle{
+//	private int radius = 3;
+//	final double pi = 3.14159;
+//	circle()
+//	{
+//		radius = 3;
+//	}
+//	circle(int r)
+//	{
+//		radius = r;
+//	}
+//	public int getRadius()
+//	{
+//		return radius;
+//	}
+//	public double getArea()
+//	{
+//		return pi * Math.pow(radius, 2);
+//	}
+//}
 
 public class Q_N_revision {
 	static void hello()
@@ -85,7 +93,7 @@ public class Q_N_revision {
 		square sq = new square(input.nextInt());
 		System.out.println("The area of square is " + sq.getArea());
 
-		circle secret = new circle();
+		circle secret = new circle(1); //the circle class used here is from the Q_N_Circle
 		System.out.println("The radius of secret circle is: " + secret.getRadius());
 		System.out.println("The area of secret circle is: " + secret.getArea());
 

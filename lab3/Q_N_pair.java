@@ -11,7 +11,7 @@ class pair{
 	}
 	public boolean coprime()
 	{
-		for(int i = 2; i < Math.min(a, b); i++)
+		for(int i = 2; i < Math.min(a, b)/2; i++)
 			if(a % i ==0 && b % i ==0) return false;
 		return true;
 	}

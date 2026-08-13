@@ -1,4 +1,4 @@
-package E3_25MCCE28;
+package lab3;
 
 import java.util.Scanner;
 
@@ -46,6 +46,10 @@ class details{
 	//transactions
 	public long Credit(int amount)
 	{
+		if(amount < 0)
+		{
+			System.out.println("Can't credit -ve amount");
+		}
 		balance += amount;
 		return balance;
 	}
@@ -54,6 +58,11 @@ class details{
 		if(balance < 0 || amount > balance)
 		{
 			System.out.println("Insufficient Bank balance");
+			return -1;
+		}
+		if(amount < 0)
+		{
+			System.out.println("Can't withdraw -ve amount");
 			return -1;
 		}
 		balance -= amount;
@@ -92,7 +101,7 @@ public class Q_N_bank {
 				donkey.Credit(amt);
 				break;
 			case 3:
-				System.out.println("Balance is" + donkey.getName());
+				System.out.println("Balance is " + donkey.getBalance());
 				break;
 			case 0:
 				break;
@@ -100,6 +109,7 @@ public class Q_N_bank {
 				System.out.println("Enter valid option! ");
 			}
 		}
+		input.close();
 		return;
 	}
 }
