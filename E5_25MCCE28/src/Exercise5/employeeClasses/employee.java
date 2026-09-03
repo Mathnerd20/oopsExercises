@@ -20,7 +20,7 @@ public class employee {
 		this.name = a.name;
 		this.salary = a.salary;
 	}
-	
+
 	public void display() {
 		System.out.printf("Employee id : %d \n Employee name: %s \n Employee Salary: %lf \n", id, name, salary);
 	}
