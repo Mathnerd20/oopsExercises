@@ -1,4 +1,4 @@
-package Exercise5.boxClasses;
+package Exercise5.reviseClasses;
 
 public class BoxWeight extends Box{
 	double weight;

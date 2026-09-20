@@ -1,8 +1,7 @@
 package Exercise5.test;
 import java.util.Scanner;
 
-import Exercise5.boxClasses.Box;
-import Exercise5.boxClasses.BoxWeight;
+import Exercise5.reviseClasses.*;
 
 public class Q_1_revise {
 	public static void main(String[] args) {
@@ -20,9 +19,12 @@ public class Q_1_revise {
         hello.display();
         hello = new Box(hello); //previously a pointer to subclass now pointing to superclass object
         hello.display();
-        /* Note to self
+        /* Note to self:
          * Method overriding supports runtime polymorphism
          * The specific method to execute is decided while the program runs based on the actual object type */
+         var one = new rectangle();
+         one.printType();
+         one.getsides();
         input.close();
 	}
 }

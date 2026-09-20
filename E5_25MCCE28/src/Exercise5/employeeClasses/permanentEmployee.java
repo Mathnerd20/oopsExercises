@@ -14,10 +14,12 @@ public class permanentEmployee extends employee {
 		super(a);
         this.epf = epf;
 	}
+
+	//methods
 	public double calculateEPF() {
 		return (this.salary * epf)/100;
 	}
 	public void display() {
-		System.out.printf("Employee id : %d \n Employee name: %s \n Employee Salary: %lf \n Employee epf amount %d", id, name, salary, this.calculateEPF());
+		System.out.printf("Permanent Employee id : %d \nEmployee name: %s \nEmployee Salary: %f \nEmployee epf amount %f \n", id, name, salary, this.calculateEPF());
 	}
 }

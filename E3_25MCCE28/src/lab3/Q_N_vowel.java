@@ -4,17 +4,20 @@ import java.util.Scanner;
 public class Q_N_vowel {
 	static boolean isVowel(char entry)
 	{
-		switch(entry)
-		{
-		case 'a' | 'A':
-		case 'e' | 'E':
-		case 'i' | 'I':
-		case 'o' | 'O':
-		case 'u' | 'U':
-			return true;
-		default:
-			return false;
-		}
+		// switch(entry)
+		// {
+		// case ('a' | 'A'):
+		// case ('e' | 'E'):
+		// case ('i' | 'I'):
+		// case ('o' | 'O'):
+		// case ('u' | 'U'):
+		// 	return true;
+		// default:
+		// 	return false; //This is what i did in lab
+		// }
+		String list = "aeiouAEIOU";
+		if(list.indexOf(entry) == -1) return false;
+		return true;
 	}
 
 	public static void main(String[] args)
