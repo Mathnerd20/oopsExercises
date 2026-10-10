@@ -19,7 +19,8 @@ public class Q_2_client{
 				clients[i] = new employee(Integer.parseInt(checker.group(2)), checker.group(1), Double.parseDouble(checker.group(3)));
 			}
 			else {
-				System.out.println("Improper input! employee " + i + " not read properly");
+				System.out.println("Improper input! employee " + (i+1) + " not read properly");
+				return;
 			}
 		}
 		for(Object i : clients) {
